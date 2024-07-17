@@ -8,7 +8,7 @@ const app = express();
 const corsOptions = {
    origin: "*",
 };
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(cookie());
 app.use(express.json());
 app.use("/users", User_router);
